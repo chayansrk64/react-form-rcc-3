@@ -7,15 +7,15 @@ const SimpleForm = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const submitForm = {name, email}
-        console.log(submitForm);
+        // console.log(submitForm);
     }
 
     return (
         <div>
            
             <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder='John Doe' id="" /> <br /> <br />
-                <input type="email" name="email" placeholder='example@gmail.com' id="" /> <br /> <br />
+                <input type="text" name="name" placeholder='John Doe' id="" /> <br /> 
+                <input type="email" name="email" placeholder='example@gmail.com' id="" /> <br /> 
                 <input type="submit" value="Submit" />
             </form>
         </div>
