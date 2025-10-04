@@ -5,10 +5,11 @@ const HookForm = () => {
 
     const [name, nameOnChange] = useInputFeild('')
     const [email, emailOnChange] = useInputFeild('')
+    const [password, passwordOnChange] = useInputFeild('')
 
     const handleSubmit = e => {
         e.preventDefault()
-        console.log(name, email);
+        console.log(name, email, password);
         
     }
 
@@ -17,6 +18,7 @@ const HookForm = () => {
             <form onSubmit={handleSubmit}>
                 <input type="text" defaultValue={name} onChange={nameOnChange} id="" /> <br />
                 <input type="email" defaultValue={email} onChange={emailOnChange} id="" /> <br />
+                <input type="password" defaultValue={password} onChange={passwordOnChange} /> <br />
                 <input type="submit" value="Submit" />
             </form>
         </div>
